@@ -34,7 +34,7 @@ export default {
             rating: doc.data().rating,
             variation: doc.data().variation,
             review: doc.data().review,
-            timestamp: doc.data().timestamp,
+            timestamp: new Date(doc.data().timestamp).toUTCString(),
           };
           updatedReviews.push(addReview);
         });
