@@ -56,7 +56,7 @@ export default {
         rating: this.rating,
         variation: this.variation,
         review: this.review,
-        timestamp: new Date().toUTCString(),
+        timestamp: Date.now(),
       };
       this.rating = null;
       this.variation = null;
